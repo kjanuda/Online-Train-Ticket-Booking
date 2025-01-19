@@ -4,6 +4,11 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import java.util.*;
 
+public class SecureTicketBookingSystem {
+    private static final int TOTAL_TICKETS = 500;
+    private static final int MAX_TICKETS_PER_USER = 5;
+    private static final int RATE_LIMIT_MINUTES = 15;
+    private static final int MAX_REQUESTS_PER_WINDOW = 10;
 
 
 
