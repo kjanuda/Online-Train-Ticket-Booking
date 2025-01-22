@@ -185,5 +185,13 @@ public class Main {
         }
         return tickets;
     }
-
+   private static String generateUniqueTicketCode() {
+        Random random = new Random();
+        return String.format("%s%s%s%04d",
+            (char)('A' + random.nextInt(26)),
+            (char)('A' + random.nextInt(26)),
+            (char)('A' + random.nextInt(26)),
+            random.nextInt(10000));
+    }
+}
  
