@@ -15,11 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Railway Ticket Booking System!");
 
-        while (true) {
-            ClientInfo clientInfo = detectClientInfo();
-            System.out.println("\nDetected Client Information:");
-            System.out.println("IP Address: " + clientInfo.ipAddress);
-            System.out.println("Machine ID: " + clientInfo.machineId);
+        
             
             if (!canBookTickets(clientInfo.ipAddress)) {
                 System.out.println("\nBooking limit reached for this IP address!");
